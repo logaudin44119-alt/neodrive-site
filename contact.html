@@ -1,0 +1,103 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact · NeoDrive</title>
+  <meta name="description" content="Installation CarPlay/Android Auto, intégration audio et électricité automobile. Réservation simple, service pro.">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <a href="index.html" class="logo">
+    <svg width="28" height="28" viewBox="0 0 64 64" aria-hidden="true">
+      <defs>
+        <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+          <stop offset="0%" stop-color="currentColor" stop-opacity="1"/>
+          <stop offset="100%" stop-color="currentColor" stop-opacity=".6"/>
+        </linearGradient>
+      </defs>
+      <circle cx="32" cy="32" r="28" fill="none" stroke="currentColor" stroke-width="4"/>
+      <path d="M12 36c10-14 30-14 40 0" fill="none" stroke="url(#g)" stroke-width="6" stroke-linecap="round"/>
+    </svg>
+    <span>NeoDrive</span>
+  </a>
+  <nav id="nav" class="nav">
+    <a href="services.html">Services</a>
+    <a href="gallery.html">Galerie</a>
+    <a href="pricing.html">Tarifs</a>
+    <a href="contact.html" class="btn btn-primary">Contact</a>
+  </nav>
+  <button class="nav-toggle" aria-label="Ouvrir le menu" onclick="toggleNav()">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+<main>
+
+<section class="page-head">
+  <div class="container">
+    <h1>Contact & Devis</h1>
+    <p>Réponse rapide. Joignez une photo de votre tableau de bord.</p>
+  </div>
+</section>
+<section class="container contact">
+  <form id="contactForm" class="card">
+    <label>Nom<input name="name" required></label>
+    <label>Email<input type="email" name="email" required></label>
+    <label>Téléphone<input name="phone" placeholder="+33"></label>
+    <label>Modèle & année<input name="model" placeholder="VW Polo 9N 2004"></label>
+    <label>Message<textarea name="message" rows="5" placeholder="Parlez-moi de votre projet…"></textarea></label>
+    <div class="upload">
+      <label for="photo">Photo du tableau de bord (optionnel)</label>
+      <input type="file" id="photo" name="photo" accept="image/*">
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+    <p id="formStatus" class="muted"></p>
+  </form>
+  <aside class="card contact-info">
+    <h3>Coordonnées</h3>
+    <ul>
+      <li>📞 <a href="tel:+33600000000">+33 6 00 00 00 00</a></li>
+      <li>✉️ <a href="mailto:contact@neodrive.fr">contact@neodrive.fr</a></li>
+      <li>📍 Loire‑Atlantique (44)</li>
+    </ul>
+  </aside>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h4>NeoDrive</h4>
+        <p>Installation CarPlay/Android Auto • Audio • Caméra de recul • Électricité auto.</p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="pricing.html">Tarifs</a></li>
+          <li><a href="gallery.html">Galerie</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+33600000000">+33 6 00 00 00 00</a></li>
+          <li><a href="mailto:contact@neodrive.fr">contact@neodrive.fr</a></li>
+          <li>Loire‑Atlantique, France</li>
+        </ul>
+      </div>
+    </div>
+    <div class="legal">© 2025 NeoDrive • Tous droits réservés</div>
+  </div>
+</footer>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
